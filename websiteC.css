@@ -1,0 +1,122 @@
+.box {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: rgb(219, 122, 10);
+    text-align: center;
+    padding: 1em;
+    }
+.head{
+    display: grid;
+    color: white;
+    grid-template-columns: 60% 40%;
+    background-color: rgb(237, 114, 13);
+    padding: 30px;
+}
+.one{
+    background-color: rgb(237, 114, 13);
+    }
+.two{
+    float:left;
+    background-image: url(two.jpg);
+    background-repeat:  no-repeat ;
+}
+.two {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .two:hover {
+    width: 400px;
+    height:400px;
+  }
+.timeline{
+    position: relative;
+    
+}
+.container{
+   
+    position: relative;
+  
+}
+
+
+.textbox{
+    padding:20px 30px;
+    background-color:white;
+    position: relative;
+   
+    border-radius: 6px;
+    font-size: 15px;
+}
+.container img{
+    position:absolute;
+    width:40px;
+    border-radius: 40%;
+    top: 5px;
+    z-index:30;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(248, 89, 4);
+     margin: 15px;
+     z-index:10;
+     animation: moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.textbox h2{
+    font-weight: 600;
+}
+.textbox small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top:15px;
+    z-index: 10;
+    border-top:15px solid transparent ;
+    border-bottom:15px solid transparent ;
+    border-left:15px solid rgb(248, 89, 4) ;
+    left:40px  ;
+}
+.pic{
+    margin: 30px;
+}
+.hh{
+    display: grid;
+    grid-template-rows: 300px  300px  300px ;
+    grid-template-columns: 300px  300px  300px ;
+    row-gap: 80px;
+    column-gap: 50px;
+}
+#likeButton{
+    background-color:rgb(219, 122, 10); 
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid red;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    
+}
+.footer{
+    background-color:rgb(219, 122, 10);
+    color: #333;
+    text-align:left;
+    padding: 1em; 
+}
+
